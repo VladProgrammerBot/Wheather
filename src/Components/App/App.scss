@@ -1,0 +1,63 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+}
+
+.greyMiniWord {
+    font-size: 20px;
+    color: rgb(199, 199, 199);
+}
+
+.miniWord {
+    font-size: 20px;
+}
+
+.BigWord {
+    font-size: 45px;
+}
+
+.MegaBigWord {
+    font-size: 120px;
+}
+
+.greyColor {
+    color: rgb(199, 199, 199);
+}
+
+@media screen and (max-width: 600px) {
+    * {
+        font-size: 20px;
+    }
+
+    .greyMiniWord {
+        font-size: 15px;
+    }
+
+    .MegaBigWord {
+        font-size: 60px;
+    }
+
+    .BigWord {
+        font-size: 22px;
+    }
+}
+
+
+body {
+    background: linear-gradient(rgba(0, 68, 255, 0.486) 0%, rgba(0, 153, 255, 0.479) 100%) fixed center / cover;
+
+    &::before {
+        content: '';
+        position: fixed;
+        width: 100vw;
+        height: 100vh;
+        top: 0;
+        left: 0;
+        background: url('../../Assets/sun-clouds.jpg') fixed center / cover;
+        z-index: -1;
+        opacity: .2;
+    }
+}

@@ -1,0 +1,10 @@
+.leftWeatherForDaySide {
+    padding: 20px;
+    border-radius: 20px;
+    display: flex;
+    gap: 20px;
+
+    >div>.text {
+        margin-left: 25px;
+    }
+}

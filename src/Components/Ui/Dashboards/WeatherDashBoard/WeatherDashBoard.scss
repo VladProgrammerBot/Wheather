@@ -1,0 +1,28 @@
+.WeatherDashBoard {
+    background-color: rgba(255, 255, 255, 0.8);
+    width: 100%;
+    padding: 20px 0;
+    border-radius: 20px;
+    box-shadow: 0 0 10px -5px;
+    margin: 30px 0;
+    
+    .DashBoardHeader {
+        gap: 50px;
+        padding: 10px 30px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        border-bottom: 2px solid rgb(228, 228, 228);
+
+        .headSide {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+
+    .content {
+        border-bottom: 2px solid rgb(228, 228, 228);
+    }
+}

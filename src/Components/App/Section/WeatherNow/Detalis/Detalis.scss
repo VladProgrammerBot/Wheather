@@ -1,0 +1,31 @@
+.rightWeatherForDaySide {
+    min-width: 250px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+
+    >div {
+        display: flex;
+        justify-content: space-between;
+        padding: 20px 0;
+        gap: 10px;
+        flex-wrap: nowrap;
+
+        >div {
+            word-break: none;
+            word-wrap: none;
+
+            &.WeatherItemName {
+                font-size: 25px;
+            }
+        }
+
+        &:not(:last-child) {
+            border-bottom: 2px solid rgb(228, 228, 228);
+        }
+    }
+}
+
+.MegaBigIMG {
+    width: 120px;
+}

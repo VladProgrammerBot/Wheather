@@ -1,0 +1,49 @@
+.DayForecast {
+    padding: 0px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: .1s;
+    cursor: pointer;
+
+    &:not(:last-child) {
+        border-bottom: 2px solid rgb(228, 228, 228);
+    }
+
+    &:hover,
+    &.active {
+        background-color: rgb(200, 240, 255);
+    }
+
+    >.leftSide {
+        #f {
+            width: 50px;
+        }
+
+        #t {
+            width: 120px;
+        }
+    }
+
+    >div {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+
+        &.leftSide {
+            #f {
+                width: 50px;
+            }
+    
+            #t {
+                width: 120px;
+            }
+        }
+
+        &.rigthSide {
+            display: flex;
+            align-items: center;
+            gap: 4px;
+        }
+    }
+}

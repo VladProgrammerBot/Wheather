@@ -1,0 +1,16 @@
+.inputCont {
+    border-bottom: 2px solid black;
+    display: flex;
+    gap: 10px;
+    flex: 1;
+    min-width: 50px;
+    max-width: 500px;
+    
+    >input {
+        min-width: 50px;
+        flex: 1;
+        background: none;
+        outline: none;
+        border: none;
+    }
+}

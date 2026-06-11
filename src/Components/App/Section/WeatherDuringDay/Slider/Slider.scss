@@ -1,0 +1,83 @@
+.sliderContainer {
+    position: absolute;
+    display: flex;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+
+    >div {
+        display: flex;
+
+        &:not(:last-child) {
+            border-right: 1px solid rgb(206, 206, 206);
+        }
+    }
+
+
+    
+
+    .SliderArea {
+        flex: 1;
+        overflow-x: hidden;
+
+        .Slider {
+            display: flex;
+            transition: .3s;
+    
+            >.hourLine {
+                width: 100px;
+                display: flex;
+                flex-direction: column;
+    
+                >.time {
+                    display: flex;
+                    justify-content: center;
+                    padding: 10px 0;
+                    z-index: 10;
+                }
+                
+                >.temp {
+                    flex: 1;
+                    position: relative;
+
+                    >.tempLine {
+                        position: absolute;
+                        bottom: 0;
+                        width: 5px;
+                        left: 50%;
+                        transform: translateX(-50%);
+                    }
+                    
+                    >.tempItem {
+                        margin: 20px 0;
+                        width: 100%;
+                        position: absolute;
+                        bottom: 100; /* change from temperature */
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+
+                        >div {
+                            width: fit-content;
+                        }
+                    }
+                }
+            }
+    
+        }
+    }
+
+    .sliderBtn {
+        align-items: center;
+        padding: 30px 5px;
+        cursor: pointer;
+        transition: .3s;
+        color: black;
+        
+        &:hover {
+            color: white;
+            background-color: rgb(210, 246, 255);
+        }
+    }
+}
