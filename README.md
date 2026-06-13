@@ -6,6 +6,7 @@ Here is a comprehensive `README.md` documentation file tailored for your React w
 
 A modern React weather dashboard application built using **React Hooks**, **SCSS**, and the **WeatherAPI** service. The app provides real-time weather monitoring, hourly forecasts via an interactive slider, and a 7-day extended outlook with dynamic temperature color coding.
 
+![Weather UI](./public/Weather.gif)
 ---
 
 ## 🚀 Key Features
