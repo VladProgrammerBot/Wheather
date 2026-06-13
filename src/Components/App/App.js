@@ -13,7 +13,7 @@ const App = () => {
   const [VeryfiCity, setVeryfiCity] = useState(city)
 
   useEffect(() => {
-    fetch(`http://api.weatherapi.com/v1/search.json?key=${apiKey}&q=${city}/`)
+    fetch(`https://api.weatherapi.com/v1/search.json?key=${apiKey}&q=${city}/`)
       .then((res) => res.json())
       .then((data) => {
         if (data[0] !== undefined && data[0].name === city) {
@@ -40,7 +40,7 @@ const App = () => {
       .then((data) => {
         setWheatherNow(data)
       })
-    fetch(`http://api.weatherapi.com/v1/forecast.json?key=${apiKey}&q=${VeryfiCity}&days=7&aqi=yes&alerts=yes/`)
+    fetch(`https://api.weatherapi.com/v1/forecast.json?key=${apiKey}&q=${VeryfiCity}&days=7&aqi=yes&alerts=yes/`)
       .then((res) => res.json())
       .then((data) => {
         setWheatherForWeek(data)
